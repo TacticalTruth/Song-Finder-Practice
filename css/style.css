@@ -16,8 +16,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-    width: 1000px;
+    grid-gap: 75px;
+    width: 80%;
     margin: 0 auto;
 }
 
