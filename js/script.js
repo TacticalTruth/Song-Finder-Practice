@@ -43,5 +43,14 @@ const updateTerm = () => {
 
 }
 
-    const searchBtn = document.querySelector('button')
-    searchBtn.addEventListener('click', updateTerm)
+const searchBtn = document.querySelector('button')
+searchBtn.addEventListener('click', updateTerm)
+document.addEventListener('play', event => {
+    const audio = document.getElementsByTagName('audio');
+    for(let i = 0; i < audio.length; i++) {
+        if(audio[i] != event.target) {
+            audio[i].pause();
+            console.log(event);
+        }
+    }
+}, true)
